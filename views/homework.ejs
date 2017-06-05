@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)file:///C:/Users/owner/Desktop/2-1.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>2-1</title>
+    <script type="text/javascript"
+        src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  
+  </head>
+
+  <body style="
+    background-color: #f7f7f7;
+">
+
+
+      <div id="image" style="
+    position: absolute;
+    width: 400px;
+    margin-left: 300px;
+">
+      <img src="./2-1_files/인스타예시.png">
+    </div>
+
+    <div id="include" style="
+    width: 350px;
+    float: right;
+    margin-right: 200px;
+    height: 570px;
+">
+
+      <div id="one" style="
+    border: 1px solid lightgray;
+    height: 380px;
+    background-color: white;
+">
+        <div id="all" style="
+      width: 351px;
+  ">
+          <p id="insta"style="
+      text-align: center;
+      font-size: 40px;
+  ">Instagram</p>
+        </div>
+        <div id="username" style="
+    width: 284px;
+    margin: auto;
+">
+        <input id="text" type="text" placeholder="사용자이름" style="
+    width: 280px;
+    height: 30px;
+    padding-left: 5px;
+">
+        </div>
+        <div id="password" style="
+    width: 284px;
+    margin: auto;
+">
+          <input id="pass" type="text" placeholder="비밀번호를 입력하세요" style="
+    width: 280px;
+    height: 30px;
+    border-right-width: 2px;
+    border-left-width: 2px;
+    padding-right: 0px;
+    margin-top: 8px;
+    padding-left: 5px;
+">
+        </div>
+        <div id="login" style="
+    width: 56px;
+    margin-left: 32px;
+    margin-right: 0px;
+    margin-top: 10px;
+">
+
+          <input id="login1" type="button" value="로그인" onclick="login()" style="
+    width: 290px;
+    background-color: #3897f0;
+    border: #3897f0;
+    border-radius: 2px;
+    height: 32px;
+    color: White;
+    font-size: 20px;
+">
+
+        </div>
+        <div id="or" style="
+    width: 33px;
+    margin: auto;
+">
+          <p style="
+    width: 45px;
+">또는</p>
+        </div>
+        <div id="second_login" style="
+    width: 170px;
+    margin: auto;
+    height: 30px;
+">
+          <p style="
+    color: #3897f0;
+">Facebook으로 로그인</p>
+        </div>
+      </div>
+      <div id="two" style="
+    width: 348px;
+    margin-left: 0px;
+    margin-right: 40px;
+    height: 60px;
+    border: 1px solid lightgray;
+    margin-top: 20px;
+    background-color: white;
+">
+        <p style="
+    width: 250px;
+    margin-top: 20px;
+    margin-left: 64px;
+">계정이 없으신가요? <b style="
+    color: #3890f7;
+"><a href='/homework/h_join'>가입하기</a></b></p>
+      </div>
+      <div id="app" style="
+    margin-top: 10px;
+">
+        <img src="./2-1_files/앱다운.png" style="
+    width: 340px;
+">
+      </div>
+    </div>
+
+<script>
+/*function login(){
+      var name=document.getElementById('text').value;
+      var password=document.getElementById('pass').value;
+      alert("이름: "+ name +"\n"+ "비밀번호: " + password +"\n"+ "이름,비밀번호: "+name+" "+ password);
+
+    }*/
+
+    $(document).ready(function(){
+      $('#login1').click(function(){
+        var u_id=$('#text').val();
+        var u_pw=$('#pass').val();
+        var data={'id':u_id, 'password':u_pw};
+
+        $.ajax({
+          type:"POST",
+          url:'/homework',
+          dataType:'json',
+          data:data,
+          success:function(result){
+            console.log(result);
+          },
+          error:function(error) {
+               alert("로그인 에러발생");
+          }
+        }).complete(function(){
+          $(window).attr('location','/homework');
+        });
+      });
+    });
+
+
+</script>
+
+
+
+</body></html>

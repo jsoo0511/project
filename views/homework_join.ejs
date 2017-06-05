@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>homework login</title>
+    <script type="text/javascript"
+        src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+
+
+</head>
+<body>
+ <h1><a href='/homework'>Instagram</a></h1>
+  <h2>Join</h2>
+   <p>Id : <input type="text" name="id" id="h_id"></p>
+   <p>password : <input type="password" name="pwd" id="h_password"></p>
+ <input type="button" value="가입" id="Button">
+
+<script>
+
+$(document).ready(function(){
+  $('#Button').click(function(){
+    var u_id= $('#h_id').val();
+    var u_pw= $('#h_password').val();
+    var data={'id':u_id, 'password':u_pw}
+
+    $.ajax({
+      type:"POST",
+      url:"/homework/h_join",
+      datatype:"json",
+      data: data,
+      success:function(result){
+        alert("가입 완료!");
+        console.log(result);
+      },
+      error:function(error){
+        alert("가입 실패!");
+      }
+    }).complete(function(){
+      $(window).attr('location','/homework');
+      });
+    });
+  });
+
+</script>
+
+</body>
+</html>

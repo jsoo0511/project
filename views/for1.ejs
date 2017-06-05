@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)file:///C:/Users/owner/Desktop/html.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+   <title>HTML</title>
+
+   <style>
+   body{
+     background-color: #f7f7f7;
+     margin-left: 0px;
+     margin-right: 0px;
+     margin-top: 0px;
+   }
+   #top{
+     background-color:white;
+     height:50px;
+   }
+   #ins{
+     display:inline;
+     margin-right: 0px;
+     margin-left: 200px;
+     margin-top: 0px;
+     padding-top: 0px;
+     border-top-width: 100px;
+   }
+   #search{
+     display:inline;
+     vertical-align: :middle;
+     margin-left: 150px;
+     margin-right: 150px;
+     margin-top: 0px;
+     padding-top: 0px;
+     margin-bottom: 10px;
+
+   }
+   #picture{
+     display:inline;
+    margin-left: 0px;
+   }
+   #main{
+     margin: 0 auto;
+     border: 1px solid #c3cfd9;
+     background-color:white;
+     border-radius: 1px;
+     width: 424px;
+     margin-top: 40px;
+     height: 700px;
+   }
+   #p{
+     text-align:right;
+     margin-top: 0px;
+     margin-bottom: 0px;
+     width: 424px;
+     margin-right: 0px;
+     margin-left: 60px;
+   }
+   #text1_1{
+       margin-bottom: 0px;
+       padding-left: 10px;
+       padding-right: 10px;
+       padding-bottom: 0px;
+       font-size: 12px;
+   }
+   #text2_2{
+       margin-top: 0px;
+       margin-bottom: 0px;
+       padding-left: 10px;
+       padding-right: 10px;
+       font-size: 12px;
+       padding-top: 5px;
+   }
+   #text3_3{
+     font-size: 15px;
+     margin-top: 45px;
+     font-style: italic;
+     color: blue;
+     margin-bottom: 0px;
+     padding-left: 10px;
+   }
+   #text4_4{
+     margin-top: 0px;
+     font-style: italic;
+     color: blue;
+     font-size: 15px;
+     padding-left: 10px;
+   }
+   #text5_5{
+     font-size: 12px;
+     padding-left: 10px;
+   }
+   #image{
+     width: 24px;
+     height: 10px;
+   }
+   #p1{
+     margin-bottom: 0px;
+     margin-top: 0px;
+     width: 424px;
+     margin-left: 250px;
+     color:gray;
+   }
+   #p2{
+     margin-top: 0px;
+     margin-bottom: 0px;
+     margin-left: 57px;
+     width: 160px;
+   }
+   #inspic{
+     margin-top: 5px;
+     height: 424px;
+     width: 424px;
+   }
+   .line{
+     height: 5px;
+     background-color: grey;
+     width: 380px;
+     margin: auto;
+   }
+   #main:hover{
+-moz-box-shadow: 0 0 30px #ccc;
+-webkit-box-shadow: 0 0  30px #ccc;
+box-shadow: 0 0 30px #ccc;
+width: 425px;
+     height:705px;
+     transform:scale(1.05);
+   }
+   #picture:hover{
+     width:450px;
+     height:550px;
+   }
+  </style>
+ </head>
+
+ <body>
+
+   <div id="top">
+     <div id="ins">
+       <span style="
+    margin-top: 0px;
+    padding-top: 0px;
+    font-family: &#39;Jim Nightshade&#39;, cursive;
+    font-size: 30px;
+">INSTAGRAM</span></div>
+     <div id="search">
+       <input type="button" value="검색" style="
+    vertical-align: middle;
+    width: 216px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+"></div>
+     <div id="picture">
+       <img src="/images/insta1.png" style="
+    width: 150px;
+    margin-top: 5px;
+    height: 35px;
+"></div>
+   </div>
+   <div id="content">
+     <div id="main">
+
+<div id="sub">
+ <div id="image">
+    <img id="image1"src="/images/1.png">
+  </div>
+  <span id="p">annnjiji</span>
+   <span id="p1">10분</span>
+  <p id="p2">구로디지털단지</p>
+</div>
+     <img id="inspic" onmousedown="imgup()" src="/images/인스타예시2.png">
+<div id="text1">
+  <p id="text1_1"><b>xeohairsillim님과 akon6.16_님이 좋아합니다.</b></p>
+</div>
+<div id="text2">
+  <p id="text2_2"><b>annnjiji 기분전환</b></p>
+</div>
+<div id="text3">
+  <p id="text3_3">#구디네일 #플로라네일 @flora.nail</p>
+</div>
+<div id="text4">
+  <p id="text4_4">#네일 #하트프렌치 #nailart</p>
+</div>
+<div id="text5">
+  <p id="text5_5"><b>akon6.16_밥이라도 먹었어야하는디</b></p>
+</div>
+<div class="line"></div>
+  <div id="heart">
+  <p id="heart1" style="
+    margin-top: 5px;
+    margin-left: 5px;
+">♥</p>
+  </div>
+   </div>
+
+
+   <script>
+
+  var btn=document.getElementById('heart1');
+  btn.onclick=function(){
+    btn.style.color="red";
+  }
+
+    for(var i=0; i<5; i++){
+      var content = document.getElementById('content');
+
+        // Make a new div
+      main = document.createElement('div');
+      main.setAttribute("id", "main");
+
+      sub = document.createElement('div');
+      sub.setAttribute("id", "sub");
+
+      image =document.createElement('div');
+      image.setAttribute('id','image');
+      image.innerHTML = '<img src="/images/1.png">';
+
+      p=document.createElement('span');
+      p.setAttribute('id','p');
+      p.innerHTML='annnjiji';
+
+      p1=document.createElement('span');
+      p1.setAttribute('id','p1');
+      p1.innerHTML='10분';
+
+      p2=document.createElement('p');
+      p2.setAttribute('id','p2');
+      p2.innerHTML="구로디지털단지";
+
+      inspic=document.createElement('div');
+      inspic.setAttribute('id','inspic');
+      inspic.innerHTML='<img src="/images/인스타예시2.png">';
+
+      text1=document.createElement('div');
+      text1.setAttribute('id','text1');
+
+      text1_1=document.createElement('p');
+      text1_1.setAttribute('id','text1_1');
+      text1_1.innerHTML='<b>xeohairsillim님과 akon6.16_님이 좋아합니다.</b>';
+
+      text2=document.createElement('div');
+      text2.setAttribute('id','text2');
+
+      text2_2=document.createElement('p');
+      text2_2.setAttribute('id','text2_2');
+      text2_2.innerHTML='<b>annnjiji 기분전환</b>';
+
+      text3=document.createElement('div');
+      text3.setAttribute('id','text3');
+
+      text3_3=document.createElement('p');
+      text3_3.setAttribute('id','text3_3');
+      text3_3.innerHTML='#구디네일 #플로라네일 @flora.nail';
+
+      text4=document.createElement('div');
+      text4.setAttribute('id','text4');
+
+      text4_4=document.createElement('p');
+      text4_4.setAttribute('id','text4_4');
+      text4_4.innerHTML='#네일 #하트프렌치 #nailart';
+
+      text5=document.createElement('div');
+      text5.setAttribute('id','text5');
+
+      text5_5=document.createElement('p');
+      text5_5.setAttribute('id','text5_5');
+      text5_5.innerHTML='<b>akon6.16_밥이라도 먹었어야하는디</b>';
+
+      line=document.createElement('div');
+      line.setAttribute('class','line');
+
+      heart=document.createElement('div');
+      heart.setAttribute('id','heart');
+
+      heart1=document.createElement('p');
+      heart1.setAttribute('id','heart1');
+      heart1.innerHTML='♥';
+    // Jug it into the parent element
+      content.appendChild(main);
+      main.appendChild(sub);
+      sub.appendChild(image);
+      sub.appendChild(p);
+      sub.appendChild(p1);
+      sub.appendChild(p2);
+      main.appendChild(inspic);
+      main.appendChild(text1);
+      text1.appendChild(text1_1);
+      main.appendChild(text2);
+      text2.appendChild(text2_2);
+      main.appendChild(text3);
+      text3.appendChild(text3_3);
+      main.appendChild(text4);
+      text4.appendChild(text4_4);
+      main.appendChild(text5);
+      text5.appendChild(text5_5);
+      main.appendChild(line);
+      main.appendChild(heart);
+      main.appendChild(heart1);
+
+
+      }
+
+
+
+   </script>
+
+
+
+
+
+</body></html>

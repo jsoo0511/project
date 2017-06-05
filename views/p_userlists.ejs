@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= 유저리스트 %></title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script src="/javascripts/home.js"></script>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><a href='/practice/Userlist'>Instagram</a></h1>
+   <h1><%= title%></h1>
+     <ul>
+        <% for(var i=0; i<users.length; i++) { %>
+          <li>
+            <%= users[i].name %>
+          </li>
+          <% } %>
+        </ul>
+
+
+
+  </body>
+</html>

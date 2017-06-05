@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<!-- saved from url=(0066)file:///C:/Users/owner/Desktop/3-2%EB%B3%B5%EC%82%AC%EB%B3%B8.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <title>3-2</title>
+
+<style>
+‪body{
+  background:green;
+}
+#p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+#top{
+  background-color:white;
+  height:50px;
+  margin-top:-10px;
+}
+#ins{
+   display:inline;
+  margin-right: 0px;
+  margin-left: 200px;
+  margin-top: 0px;
+  padding-top: 0px;
+  border-top-width: 100px;
+}
+#ins1{
+  margin-top: 0px;
+  padding-top: 0px;
+  font-family: &#39;Jim Nightshade&#39;, cursive;
+  font-size: 30px;
+}
+#search{
+  display:inline;
+  vertical-align:middle;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-top: 0px;
+  padding-top: 0px;
+  margin-bottom: 10px;
+}
+#button{
+  vertical-align: middle;
+  width: 216px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  background-color:#f7f7f7;
+}
+#picture{
+  margin-left: 0px;
+  display:inline;
+}
+#picture1{
+  width: 150px;
+  margin-top: 5px;
+  height: 35px;
+}
+#container{
+    height: 600px;
+     margin-left: 50px;
+    margin-right: 0px;
+    width: 1200px;
+}
+#me{
+    background-color: #f7f7f7;
+}
+#src{
+  width: 150px;
+  height: 140px;
+  margin-left: 200px;
+  margin-top: 30px;
+  background-color: #f7f7f7;
+}
+#totalname{
+  display:inline;
+  width: 400px;
+  height: 30px;
+  float: right;
+  margin-right: 400px;
+  margin-top: 30px;
+}
+#name{
+  display: inline;
+  font-size: 23px;
+  margin-right: 10px;
+}
+#edit{
+    display: inline;
+}
+#editbutton{
+  height: 26px;
+  margin-bottom: 5px;
+  border-bottom-width: 2px;
+  padding-bottom: 1px;
+  width: 116px;
+  background-color: #f7f7f7;
+  border: 1px solid gainsboro;
+}
+#button{
+    display: inline;
+}
+#oobutton{
+  background-color: #f7f7f7;
+  border: 1px solid #f7f7f7;
+  padding-bottom: 1px;
+  padding-top: 5px;
+  text-align: center;
+}
+#explain{
+  display: inline;
+    float: right;
+    width: 500px;
+    margin-top: 20px;
+    margin-right: 300px;
+}
+#post{
+   display: inline;
+    margin-right: 50px;
+}
+#follower{
+   display: inline;
+    margin-right: 50px;
+}
+#follow{
+   display: inline;
+}
+#bname{
+  display:inline;
+  margin-top: 100px;
+}
+#picture_array{
+   width: 800px;
+    height: 300px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+#for1{
+  width: 200px;
+  height: 200px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  display: inline-block;
+}
+#for2{
+  ;
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    display: inline-block;
+}
+#for3{
+
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    display: inline-block;
+}
+#for4{
+
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    display: inline-block;
+}
+#for5{
+
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    display: inline-block;
+}
+#for6{
+
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    display: inline-block;
+}
+.control{
+  width: 200px;
+    height: 200px;
+}
+#Modal{
+  height: 100%;
+  z-index: 1;
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: fixed;
+  background-color: rgba(0,0,0,0.4);
+display:none;
+}
+#modalcontent{
+   width: 300px;
+    margin-left: 480px;
+    margin-right: 480px;
+    background: white;
+    margin-top: 200px;
+}
+#logout1{
+   text-align: center;
+    margin-bottom: 0px;
+    height: 30px;
+    margin-top: 20px;
+    padding-top: 8px;
+}
+#line{
+   height: 2px;
+    background: blue;
+}
+#cancel1{
+   text-align: center;
+    margin-top: 6px;
+    height: 30px;
+}
+#second_modal{
+   height: 100%;
+  z-index: 1;
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: fixed;
+  background-color: rgba(0,0,0,0.4);
+  display:none;
+
+}
+#modals{
+   width: 300px;
+    margin-left: 480px;
+    margin-right: 480px;
+    background: white;
+    margin-top: 200px;
+
+}
+#change1{
+  text-align: center;
+    margin-bottom: 0px;
+    height: 30px;
+    margin-top: 20px;
+    padding-top: 8px;
+}
+#delete1{
+  text-align: center;
+    margin-top: 6px;
+    height: 30px;
+    margin-bottom: 0px;
+
+}
+#take1{
+  text-align: center;
+    margin-top: 6px;
+    height: 30px;
+    margin-bottom: 0px;
+}
+#upload1{
+  text-align: center;
+    margin-top: 6px;
+    height: 30px;
+    margin-bottom: 0px;
+}
+#quit1{
+  text-align: center;
+    margin-top: 6px;
+    height: 30px;
+}
+#line1{
+   height: 2px;
+    background: blue;
+}
+#line2{
+   height: 2px;
+    background: blue;
+}
+#line3{
+   height: 2px;
+    background: blue;
+}
+#line4{
+   height: 2px;
+    background: blue;
+}
+.imgclass{
+  width:230px;
+  height:200px;
+  display: inline-block;
+  margin-right:25px;
+  margin-bottom:25px;
+  float:left;
+  position: relative;
+}
+.imgmodal{
+  height: 100%;
+  z-index: 1;
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: fixed;
+  background-color: rgba(0,0,0,0.4);
+display:block;
+}
+.imgmodalpic{
+  display:inline-block;
+  width: 500px;
+  margin-left: 0px;
+  height: 350px;
+
+}
+.imgmodalcontent{
+  width: 810px;
+  margin: 100px 226px 0px 226px;
+  height: 350px;
+  background-color: white;
+}
+.standard{
+  width: 500px;
+  height: 350px;
+}
+.nametext{
+  margin-right: 0px;
+  margin-left: 5px;
+  width: 300px;
+  height: 350px;
+  float:right;
+}
+.institle{
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+}
+.lines{
+  height: 2px;
+  color: gray;
+  background: #f7f7f7;
+    width: 280px;
+}
+.button1{
+  margin-left: 120px;
+  background: white;
+  border: 0px;
+  color: lightgray;
+  font-size: 20px;
+}
+.heart{
+  margin-top: 16px;
+  display: inline-block;
+}
+.Name{
+  float: right;
+  margin-right: 100px;
+  width: 120px;
+  height: 21px;
+}
+.picmodal{
+  width:230px;
+  height:200px;
+  display: inline-block;
+  margin-right:25px;
+  margin-bottom:25px;
+  float:left;
+  position:inherit;
+  border:10px solid black;
+  background: black;
+  color:black;
+
+}
+.imgclass:hover{
+    background-color: yellow;
+    opacity: 0.5;
+
+}
+</style></head>
+
+<body style="background:#f7f7f7;">
+  <div id="top">
+    <div id="ins">
+      <span id="ins1">INSTAGRAM</span></div>
+    <div id="search" style="border:1px solid #f7f7f7;">
+      <button id="button" onmousedown="shift()" onmouseup="re()"><p id="p">Search</p></button>
+    </div>
+    <span id="picture">
+      <img id="picture1" src="/images/insta1.png">
+    </span>
+  </div>
+  <div id="container">
+    <div id="profile">
+      <span id="me">
+        <img id="src" src="/images/puppy.png">
+      </span>
+      <div id="contain" style="
+    height: 180px;
+    display: inline;
+    float: right;
+    width: 800px;
+">
+      <div id="totalname">
+      <div id="name">
+        Lee Jung Soo
+      </div>
+      <div id="edit">
+        <input id="editbutton" type="button" value="Edit profile">
+      </div>
+      <div id="button">
+        <input id="oobutton" type="button" value="o o o">
+      </div>
+
+     </div>
+     <div id="explain">
+       <div id="post">
+         Posting 80
+       </div>
+       <div id="follower">
+         Follower 167
+       </div>
+       <div id="follow">
+         Follow 167
+       </div>
+     </div>
+     <div id="bname">
+       <p style="
+    width: 100px;
+    height: 20px;
+    margin-top: 120px;
+    font-size: 20px;
+"><b>Lee</b></p>
+     </div>
+   </div>
+ </div>
+ <div id="picture_array">
+
+
+</div>
+
+
+
+<div id="Modal">
+  <div id="modalcontent">
+    <div id="logout">
+      <p id="logout1">Log Out</p>
+    </div>
+    <div id="line">
+    </div>
+    <div id="cancel">
+      <p id="cancel1">cancel</p>
+    </div>
+  </div>
+</div>
+
+<div id="second_modal" style="display: none;">
+  <div id="modals">
+     <div id="change">
+       <p id="change1">Change Picture</p>
+     </div>
+     <div id="line1"></div>
+     <div id="delete">
+       <p id="delete1" style="
+    margin-bottom: 0px;
+    margin-top: 6px;
+">Delete Image</p>
+     </div>
+     <div id="line2"></div>
+     <div id="take">
+       <p id="take1">Take Photo</p>
+     </div>
+     <div id="line3"></div>
+     <div id="upload">
+       <p id="upload1">Upload Image</p>
+     </div>
+     <div id="line4"></div>
+     <div id="quit">
+       <p id="quit1">Quit</p>
+     </div>
+   </div>
+ </div>
+
+
+<div class="imgmodal" id="imgmodal1" style="display: none;">
+  <div class="imgmodalcontent">
+    <div class="imgmodalpic">
+      <img src="/images/image1.png" class="standard">
+    </div>
+    <div id="texts" class="nametext">
+      <img src="/images/puppy.png" class="institle">
+      <p class='Name'>Lee Jung Soo</p>
+      <div class="lines"></div>
+      <p>Like 100</p>
+      <p>Exellent!!!</p>
+      <p>This picture is lit!!</p>
+      <div class="lines" style="
+    margin-top: 100px;
+  "></div>
+      <img class='heart'src="./3-2&#48373;&#49324;&#48376;_files/heart.png">
+      <div style="
+    display: inline-block;
+    height: 30px;
+"><p style="
+    margin-top: 5px;
+    margin-bottom: 8px;
+">comment</p></div>
+      <input type="button" class="button1" value="ooo">
+    </div>
+  </div>
+</div>
+
+<div class="imgmodal" id="imgmodal2" style="display: none;">
+  <div class="imgmodalcontent">
+    <div class="imgmodalpic">
+      <img src="/images/image2.png" class="standard">
+    </div>
+    <div id="texts" class="nametext">
+      <img src="/images/puppy.png" class="institle">
+      <p class='Name'>Lee Jung Soo</p>
+      <div class="lines"></div>
+      <p>Like 200</p>
+      <p>Exellent!!!</p>
+      <p>This picture is lit!!</p>
+      <div class="lines" style="
+    margin-top: 100px;
+  "></div>
+      <img class='heart'src="./3-2&#48373;&#49324;&#48376;_files/heart.png">
+      <div style="
+    display: inline-block;
+    height: 30px;
+"><p style="
+    margin-top: 5px;
+    margin-bottom: 8px;
+">comment</p></div>
+      <input type="button" class="button1" value="ooo">
+    </div>
+  </div>
+</div>
+
+<div class="imgmodal" id="imgmodal3" style="display: none;">
+  <div class="imgmodalcontent">
+    <div class="imgmodalpic">
+      <img src="/images/image3.png" class="standard">
+    </div>
+    <div id="texts" class="nametext">
+      <img src="/images/puppy.png" class="institle">
+      <p class='Name'>Lee Jung Soo</p>
+      <div class="lines"></div>
+      <p>Like 300</p>
+      <p>Exellent!!!</p>
+      <p>This picture is lit!!</p>
+      <div class="lines" style="
+    margin-top: 100px;
+  "></div>
+      <img class='heart'src="./3-2&#48373;&#49324;&#48376;_files/heart.png">
+      <div style="
+    display: inline-block;
+    height: 30px;
+"><p style="
+    margin-top: 5px;
+    margin-bottom: 8px;
+">comment</p></div>
+      <input type="button" class="button1" value="ooo">
+    </div>
+  </div>
+</div>
+
+<div class="imgmodal" id="imgmodal4" style="display: none;">
+  <div class="imgmodalcontent">
+    <div class="imgmodalpic">
+      <img src="/images/image4.png" class="standard">
+    </div>
+    <div id="texts" class="nametext">
+      <img src="/images/puppy.png" class="institle">
+      <p class='Name'>Lee Jung Soo</p>
+      <div class="lines"></div>
+      <p>Like 400</p>
+      <p>Exellent!!!</p>
+      <p>This picture is lit!!</p>
+      <div class="lines" style="
+    margin-top: 100px;
+  "></div>
+      <img class='heart'src="./3-2&#48373;&#49324;&#48376;_files/heart.png">
+      <div style="
+    display: inline-block;
+    height: 30px;
+"><p style="
+    margin-top: 5px;
+    margin-bottom: 8px;
+">comment</p></div>
+      <input type="button" class="button1" value="ooo">
+    </div>
+  </div>
+</div>
+
+<div class="imgmodal" id="imgmodal5" style="display: none;">
+  <div class="imgmodalcontent">
+    <div class="imgmodalpic">
+      <img src="/images/image5.png" class="standard">
+    </div>
+    <div id="texts" class="nametext">
+      <img src="/images/puppy.png" class="institle">
+      <p class='Name'>Lee Jung Soo</p>
+      <div class="lines"></div>
+      <p>Like 500</p>
+      <p>Exellent!!!</p>
+      <p>This picture is lit!!</p>
+      <div class="lines" style="
+    margin-top: 100px;
+  "></div>
+      <img class='heart'src="./3-2&#48373;&#49324;&#48376;_files/heart.png">
+      <div style="
+    display: inline-block;
+    height: 30px;
+"><p style="
+    margin-top: 5px;
+    margin-bottom: 8px;
+">comment</p></div>
+      <input type="button" class="button1" value="ooo">
+    </div>
+  </div>
+</div>
+
+<div class="imgmodal" id="imgmodal6" style="display: none;">
+  <div class="imgmodalcontent">
+    <div class="imgmodalpic">
+      <img src="/images/image6.png" class="standard">
+    </div>
+    <div id="texts" class="nametext">
+      <img src="/images/puppy.png" class="institle">
+      <p class='Name'>Lee Jung Soo</p>
+      <div class="lines"></div>
+      <p>Like 600</p>
+      <p>Exellent!!!</p>
+      <p>This picture is lit!!</p>
+      <div class="lines" style="
+    margin-top: 100px;
+  "></div>
+      <img class='heart'src="./3-2&#48373;&#49324;&#48376;_files/heart.png">
+      <div style="
+    display: inline-block;
+    height: 30px;
+"><p style="
+    margin-top: 5px;
+    margin-bottom: 8px;
+">comment</p></div>
+      <input type="button" class="button1" value="ooo">
+    </div>
+  </div>
+</div>
+
+  <script>
+  var img=new Array();
+    img[0]=new Image();
+    img[0].src="/images/image1.png";
+    img[1]=new Image();
+    img[1].src="/images/image2.png";
+    img[2]=new Image();
+    img[2].src="/images/image3.png";
+    img[3]=new Image();
+    img[3].src="/images/image4.png";
+    img[4]=new Image();
+    img[4].src="/images/image5.png";
+    img[5]=new Image();
+    img[5].src="/images/image6.png";
+
+    for(var i=0;i<img.length;i++){
+      var main=document.getElementById('picture_array');
+      var mainimg=document.createElement('div');
+      //var picmodal=document.createElement('div');
+      //picmodal.innerHTML="Comment 100";
+      img[i].className='imgclass';
+
+      mainimg.className='imgclass';
+
+      //img[i].style.z_index=2;
+      //picmodal.className='picmodal';
+      //picmodal.style.z_index=1;
+      main.appendChild(mainimg);
+      mainimg.appendChild(img[i]);
+    //  img[i].appendChild(picmodal);
+      }
+
+
+
+var btn=document.getElementById('oobutton');
+var modal=document.getElementById('Modal');
+var exit=document.getElementById('cancel');
+var imgmodal1=document.getElementById('imgmodal1');
+var imgmodal2=document.getElementById('imgmodal2');
+var imgmodal3=document.getElementById('imgmodal3');
+var imgmodal4=document.getElementById('imgmodal4');
+var imgmodal5=document.getElementById('imgmodal5');
+var imgmodal6=document.getElementById('imgmodal6');
+
+
+var btn1=document.getElementById('src');
+var modal1=document.getElementById('second_modal');
+var quit1=document.getElementById('quit');
+
+img[0].onclick=function(){
+  imgmodal1.style.display='block';
+}
+
+img[1].onclick=function(){
+  imgmodal2.style.display='block';
+}
+
+img[2].onclick=function(){
+  imgmodal3.style.display='block';
+}
+
+img[3].onclick=function(){
+  imgmodal4.style.display='block';
+}
+
+img[4].onclick=function(){
+  imgmodal5.style.display='block';
+}
+
+img[5].onclick=function(){
+  imgmodal6.style.display='block';
+}
+
+window.onclick=function(event){
+  if(event.target==imgmodal1){
+    imgmodal1.style.display="none";
+  }
+  else if(event.target==imgmodal2){
+    imgmodal2.style.display="none";
+  }
+  else if(event.target==imgmodal3){
+    imgmodal3.style.display="none";
+  }
+  else if(event.target==imgmodal4){
+    imgmodal4.style.display="none";
+  }
+  else if(event.target==imgmodal5){
+    imgmodal5.style.display="none";
+  }
+  if(event.target==imgmodal6){
+     imgmodal6.style.display="none";
+   }
+}
+/*window.onclick=function(event){
+ if(event.target==imgmodal6){
+    imgmodal6.style.display="none";
+  }
+}*/
+
+btn1.onclick=function(){
+  modal1.style.display='block';
+}
+quit1.onclick=function(){
+  modal1.style.display='none';
+}
+btn.onclick=function(){
+  modal.style.display='block';
+}
+exit.onclick=function(){
+  modal.style.display='none';
+}
+
+function shift(){
+document.getElementById('button').style.background="white";
+  document.getElementById('button').style.color="gray";
+  document.getElementById('p').style.float="left";
+  document.getElementById('search').style.background="#f7f7f7";
+}
+function re(){
+  document.getElementById('button').style.color="black";
+  document.getElementById('button').style.background="#f7f7f7";
+  document.getElementById('p').style.float="none";
+    document.getElementById('search').style.background="#f7f7f7";
+}
+
+
+  </script>
+
+
+
+</body></html>
